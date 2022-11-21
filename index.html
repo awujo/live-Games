@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mole Game
+        </title>
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <h2>Score</h2> 
+      <h3 id="score">0</h3>
+      <h2>Time out</h2>
+      <h3 id="timeout">60</h3>
+
+     <!---<input type="range" min="0" max="120" id="countRange" value="60">--> 
+     <label for="speedRange">Fast</label>
+      <input name='speedRange' type="range" min="500" max="2000" id="speedRange" value="1000">
+      <label for="speedRange">Slow</label>
+      <h4 id="speedRangeDisplay"></h4>
+      <button id="btnStart" onclick="timer()">Start</button>
+
+      <div id="squareContiner">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+
+      </div>
+      
+
+        <script src="app.js"></script>
+    </body>
+</html>
